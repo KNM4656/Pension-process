@@ -13,7 +13,7 @@ import com.cognizant.mfpe.pensionManagementSystem.processPension.model.Pensioner
  * To access Pensioner detail microservice
  * 
  */
-@FeignClient(name = "pensioner-detail-service", url = "http://pensionerdetails-env.eba-gxumxq57.ap-south-1.elasticbeanstalk.com")
+@FeignClient(name = "pensioner-detail-service", url = "http://pensionerdetails-env.eba-gxumxq57.ap-south-1.elasticbeanstalk.com/login")
 public interface PensionerDetailClient {
 
 	@GetMapping("/PensionerDetailByAadhaar/{aadhaarNumber}")
